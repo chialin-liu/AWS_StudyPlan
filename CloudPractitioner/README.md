@@ -1,7 +1,7 @@
 # Ch2-1.  What is cloud computing
 ## advantage of cloud computing
-###         1. Trade captital expense for variable expense
-###     2. Benefits from massive economics of scale
+    1. Trade captital expense for variable expense
+    2. Benefits from massive economics of scale
 ###     3. Stop guessing about capacity
 ###     4. Increase speed and agility
 ###     5. Stop spending money running and maintaining data centers
@@ -19,5 +19,7 @@
 ###     1. Available zone: think of as Data center
 ###     2. An availablity zone may have many data centers
 ![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/AZRegion.png)
+### 3. edge location: 
+
      
      
