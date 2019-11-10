@@ -26,5 +26,27 @@
     2. Latency to end user
     3. AWS services: us-east1 has numerous services
 
-     
+# Ch2-3 Let's log into AWS - LAB     
+##  Support package
+    1. Basic
+    2. Developer 12-24 hr response, 29$/month
+    3. Business: 1 hr response, 100$/month
+    4. Enterprise: 15min response, $15000/month
+# Ch2-4 Create a billing alarm
+## LAB step
+    1. Launch cloudWatch-> billing->create alarm->select SNS topic-> create new topic->enter email address-> subscribe topic
+
+# Ch2-5 Identity Access Management
+## LAB security status
+    1. MFA
+    2. modify the IAM users sign in link to be more friendly
+    3. Three ways of accessing: 
+    ### programmatic access: access ID, secret key
+    ### AWS management console
+    ### AWS SDK
+    4. Add user to permission: 
+    ### Add user to specified group
+    ### copy permission from other users
+    ### apply policy to user
+    5. Create a group-> AdminAccess(JSON-format)
      
