@@ -41,7 +41,7 @@
     1. MFA
     2. modify the IAM users sign in link to be more friendly
     3. Three ways of accessing: 
-    ### programmatic access: access ID, secret key
+    * programmatic access: access ID, secret key
     ### AWS management console
     ### AWS SDK
     4. Add user to permission: 
