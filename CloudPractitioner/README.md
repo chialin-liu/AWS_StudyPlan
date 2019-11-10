@@ -18,8 +18,9 @@
 ##  Global Infrastructure
     1. Available zone: think of as Data center
     2. An availablity zone may have many data centers
-![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/AZRegion.png)
     3. edge location: consists of CloudFront, a CDN, for storing data cache
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/AZRegion.png)
+    
 ##  Choosing the right region?
     1. Data sovereinty law
     2. Latency to end user
