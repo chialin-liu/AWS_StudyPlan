@@ -42,11 +42,12 @@
     2. modify the IAM users sign in link to be more friendly
     3. Three ways of accessing: 
     * programmatic access: access ID, secret key
-    ### AWS management console
-    ### AWS SDK
+    * AWS management console
+    * AWS SDK
     4. Add user to permission: 
-    ### Add user to specified group
-    ### copy permission from other users
-    ### apply policy to user
-    5. Create a group-> AdminAccess(JSON-format)
+    * Add user to specified group
+    * copy permission from other users
+    * apply policy to user
+    5. Create a group-> AdminAccess(JSON-format)->email the user passwd/id 
+## Global     
      
