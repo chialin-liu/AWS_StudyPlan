@@ -50,4 +50,34 @@
     * apply policy to user
     5. Create a group-> AdminAccess(JSON-format)->email the user passwd/id 
 ## Global     
+
+# Ch2-6 S3
+## Introduction
+    1. Object-based storage
+    2. Files stored in bucket
+    3. share universal name space: globally
+    4. Receive HTTP 200 (successful)
+    5. Key-value store(key is file name, value is bytes)
+    6. Version-ID
+
+## Data consistency in S3
+    1. if updating existing file, may or may not see immediately
+    2. Read after write consistency for PUTS
+    3. Eventual consistency for OVERWRITE PUTS and DELETES(take time to propagate)
+## Gurantee
+    1. (11x9) durability(won't lose access to the file)
+## Features
+    1. Tiered storage available
+    2. Lifecycle management
+    3. versioning
+    4. encryption
+    5. secure data using: Access Control Lists and Bucket policies
+## storage class
+    1. Standard: 99.99 available; (11x9) durability; stores redundantly multiple devices and designed for sustaining the loss
+    2. IA(infrequent access): lower fee than standard, charged retrieval fee
+    3. One-zone IA: lower cost; and no requirement for many AZs data resilience
+    4. Intelligent Tiering: design to optimize cost by moving data automatically for cost-effective without performance impact
+    5. Glacier: store data at cheaper costs than on-premise solutions. Retrieval times can be configured to minutes to hours
+    6. Glacier deep archive: lowest cost storage, retrieval times may be 12 hours
+    
      
