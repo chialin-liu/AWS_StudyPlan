@@ -79,5 +79,6 @@
     4. Intelligent Tiering: design to optimize cost by moving data automatically for cost-effective without performance impact
     5. Glacier: store data at cheaper costs than on-premise solutions. Retrieval times can be configured to minutes to hours
     6. Glacier deep archive: lowest cost storage, retrieval times may be 12 hours
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/s3_class.png)    
     
      
