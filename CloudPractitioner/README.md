@@ -110,3 +110,4 @@
 ## Key terminolgy
     1. Origin: all the files that CDN will distribute. S3 bucket, EC2, Elastic load balancer or Route53
     2. Distribution: give the CDN2 which consists of collections of edge location
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/cloudfront.png)    
