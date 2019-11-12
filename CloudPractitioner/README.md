@@ -53,12 +53,15 @@
 
 # Ch2-6 S3
 ## Introduction
-    1. Object-based storage
+    1. Object-based storage(Not suitable to install operating system)
     2. Files stored in bucket
     3. share universal name space: globally
     4. Receive HTTP 200 (successful)
     5. Key-value store(key is file name, value is bytes)
     6. Version-ID
+    7. files can be 0Byte - 5TBytes
+    8. unlimited storage
+    7. s3-eu-west-1.amazonaws.com/acloudguru
 
 ## Data consistency in S3
     1. if updating existing file, may or may not see immediately
@@ -80,5 +83,30 @@
     5. Glacier: store data at cheaper costs than on-premise solutions. Retrieval times can be configured to minutes to hours
     6. Glacier deep archive: lowest cost storage, retrieval times may be 12 hours
 ![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/s3_class.png)    
+
+## Charge
+    1. storage
+    2. requests
+    3. storage management pricing
+    4. data transfer
+    5. transfer acceleration(Utilize cloudfront and edge location)
+    6. cross region replication
     
-     
+# Ch2-7 S3 LAB
+    1. Actions->make public (because by default, the uploaded file can be blocked)
+    2. Cannot share bucket name with someone else
+    3. View the bucket in globally, can have bucket in indivisual region
+    4. can change storage class and encryption on the fly
+## Restricting Bucket Access    
+    1. bucket policy: apply to whole bucket
+    2. object policy: apply to indivisual files
+    3. IAM policies to user/group
+# Ch2-8 S3 LAB website
+    1. choose bucket -> Edit public access setting-> cancel block all public access->confirm
+    2. properties->static website hosting
+    3. use bucket polices to make bucket entire public
+    4. website using DB cannot use s3
+# Ch2-9 CloudFront
+## Key terminolgy
+    1. Origin: all the files that CDN will distribute. S3 bucket, EC2, Elastic load balancer or Route53
+    2. Distribution: give the CDN2 which consists of collections of edge location
