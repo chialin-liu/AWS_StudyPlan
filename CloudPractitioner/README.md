@@ -155,7 +155,7 @@
     6. Throughput optimized HDD(ST1): low cost for throughput-intensive or frequent access
     7. Cold HDD(SC1) : less frequent access workloads(File server)
     8. Magnetic
-## EC2 LAB
+# EC2 LAB
     1. Launch instance->Free tier only
     2. Use private key to connect EC2
     3. Let anyone in 0.0.0.0/0
@@ -164,4 +164,37 @@
     6. SSH(22), HTTP(80), HTTPS(443), RDP(3389)
     7. Design for failure. Put EC2 in AZs
     
+# EC2 Command Line
+    1. use access key & access ID to connect
+# Using Role
+    1. connect role to EC2
+    2. more safe to use than access key/id
+    3. Universal
+# LoadBalancer
+    1. EC2->load balancer
+    2. application lb(7-layer, make intelligent decision); 
+    3. network lb(extreme performance, static ip address); 
+    4. classic lb(test, develope, keep costs low)
+# DB
+## RDS Type
+    1. SQL server
+    2. Oracle
+    3. MySQL Server
+    4. PostgreSQL
+    5. Aurora
+    6. MariaDB
+## Feature
+    1. Multi-AZs for disaster recovery
+    2. Read-replicas for performance
+## Non-relational
+    1. DynamoDB
+## Difference between OLTP/OLAP
+    1. OLTP: online transaction processing: order a number and return a row of data
+## What is data warehousing
+    1. Amazon is redshift
+    2. redshift for business intelligence or data warehousing
+## What is Elastic Cache
+    1. a web service makes it easy to deploy operate and scale in-memory in the cloud
+    2. speed up performance of existing databases (Frequenct identical queries)
+    2. two open-source engines: memcached/redis
     
