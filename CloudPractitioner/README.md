@@ -110,4 +110,58 @@
 ## Key terminolgy
     1. Origin: all the files that CDN will distribute. S3 bucket, EC2, Elastic load balancer or Route53
     2. Distribution: give the CDN2 which consists of collections of edge location
-![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/cloudfront.png)    
+    3. Web distribution
+    4. RTMP: for media streaming
+    5. deploying...[06:54]
+    6. Edge location can be written 
+    7. Objects are cached for the TTL(Time to Live)
+    8. Can clear objects but will be charged
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/cloudfront.png) 
+
+# Ch2-10 EC2
+## What is EC2
+    1. virtual server in cloud
+## Pricing models
+    1. On-demand: fixed rate by the hour or second
+    2. Reserved: discount on the hourly charge. Contract term are 1y or 3y
+    3. Spot: bit what price 
+    4. Dedicated host: use your own server-bound software licences
+## On-demand
+    1. flexible and low cost, no upfront cost and no long-term contract
+    2. app which is short-term, spiky or unpredictable workloads cannot be interrupted
+    3. app built or tested on EC2 for the first time
+## Reserved
+    1. app with steady and predictable usage
+    2. app requires reserved capacity
+    3. able to make upfront payments to reduce more
+    4. standard/convertible/schedualed types
+## Spot
+    1. app has flexible start/end time
+    2. users with urgent computing needs for large amounts of additional capacity
+    3. if spot is terminated by EC2, no charge.
+    4. if you terminated your self, you will be charged
+## Dedicate host
+    1. for regulatory requirements that may not support multi-tenant virtualization
+    2. great for licensing which does not support multi-tenant or cloud deployment
+    3. can be purchased on Demand
+    4. can be purchased as Reservation for up to 70% off on Demand
+## What is EBS?
+    * virtual disk in the cloud
+    1. create storage volumes and attach them to EC2
+    2. once attached, create a file system, run database
+    3. placed in AZs, automatically replicated to protect from failure
+    4. General Purpose SSD(GP2): balance price/performance for wide range
+    5. Provision IOPS SSD(IO1): highest performance SSD
+    6. Throughput optimized HDD(ST1): low cost for throughput-intensive or frequent access
+    7. Cold HDD(SC1) : less frequent access workloads(File server)
+    8. Magnetic
+## EC2 LAB
+    1. Launch instance->Free tier only
+    2. Use private key to connect EC2
+    3. Let anyone in 0.0.0.0/0
+    4. let one ip in x.x.x.x/32
+    5. security group are virtual walls
+    6. SSH(22), HTTP(80), HTTPS(443), RDP(3389)
+    7. Design for failure. Put EC2 in AZs
+    
+    
