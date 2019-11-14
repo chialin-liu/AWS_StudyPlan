@@ -317,3 +317,5 @@
 ## Cost explorer
     1. has easy-to-use interface that lets you visualize, understand, and manage
     2. use explore costs after they have been incurred
+## support plans
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/pricemodel.png)
