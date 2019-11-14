@@ -197,4 +197,123 @@
     1. a web service makes it easy to deploy operate and scale in-memory in the cloud
     2. speed up performance of existing databases (Frequenct identical queries)
     2. two open-source engines: memcached/redis
+# DB-LAB
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/ec2_script.png)
+
+# Route53
+    1. build a DNS or register domain name
+    2. Global same as IAM/S3
+# Elastic Beanstalk
+    1. build automatically
+    2. Is limited and not programmable
+# CloudFormation
+    1. Elastic Beanstalk and cloud formation are free services
+    2. the resources they provision are not free(EC2)
+    3. can provision and progrmmable
+# Global AWS services
+## Services are global  
+    1. IAM
+    2. Route53
+    3. CloudFront
+    4. SNS
+    5. SES
+## some services are global views but are regional
+    1. S3
+# Which AWS service can be used on-premise
+    1. snowball
+    2. snowball edge
+    3. storage gateway
+    4. codedeploy
+    5. opswork
+    6. iot greengrass
+# Cloudwatch
+## monitor things
+    1. Compute: EC2/Autoscaling group/Elastic load balance/Route 53 health checks
+    2. Storage/content delivery: EBS volumn/storage gateway/cloudfront
+    3. Host Level metrics: CPU/network/disk/status check
+## Remember
+    1. cloudwatch with ec2 monitor events every 5 min
+    2. can have 1 min intervals by turning on detailed monitor
+    3. create cloudwatch alarm which trigger notifications
+    4. cloudwatch is all about performance
+#  AWS system manager
+    1. manage fleets of EC2 and virtual machine
+    2. a piece of software is installed in virtual machine
+    3. can be inside AWS and on-premise
+    4. run command to install/patch
+    5. integrate with cloudwatch to your dashboard entire estate
     
+# Ch3 price model
+## Difference in CAPEX & Opex
+    1. Capex: capital expenditure, pay upfront, fixed, sunk cost
+    2. Opex: Operational expenditure, pay for what you use. Like utility billing
+## Pricing policy
+    1. pay as you go
+    2. pay less where you reserve
+    3. pay even less per unit by using more
+    4. pay even less as AWS grows
+    5. custom pricing
+    $ understand the fundamentals of pricing; start early with cost opitmization; maximize the power of flexibilty
+## three fundamental drivers of pricing
+    1. comput 
+    2. storage
+    3. data outbound
+## pricing models
+    1. On-demand
+    2. reservation
+    3. dedicated instances
+    4. spot instances
+## Free services
+    1. VPC: virtual data center in the cloud
+    2. Elastic beanstalk
+    3. cloudformation
+    4. IAM
+    5. auto scaling
+    6. Opsworks
+    7. consolidated billing
+## what determines the price
+    1. clock hours of server time
+    2. instance type
+    3. price model
+    4. number of instances
+    5. load balance
+    6. detailed monitor
+    7. auto scale
+    8. elastic IP address
+    9. operating system/software packages
+## Price for Lambda
+    1. Request pricing:
+        free tier: 1M per month
+    2. Duration pricing: xxx GB-sec per month
+    3. additional charge: if Lambda uses other AWS services or transfer data, like s3
+## Price for EBS
+    1. Volumes(per GB)
+    2. Snapshots(per GB)
+    3. data transfer
+## Price for S3
+    1. storage class
+    2. storage
+    3. requests(GET/PUT/COPY)
+    4. data transfer
+## Price for glacier
+    1. storage
+    2. data retrieval times
+## Snowball
+    1. data transport solution to transfer large data in/out AWS
+    2. Price for snowball: service fee per job; daily charge: first 10d are free; Data transfer: in to S3 free, but out is not
+## Price for RDS
+    1. clock hours of server time2
+    2. database character
+    3. db purchase type
+    4. number of db instances
+    5. provisioned storage
+    6. additional storage
+    7. requests
+    8. deployment type
+# AWS budget  and cost explorer
+## budget
+    1. set custom budget which alert you when exceed
+    2. use budget cost before they have been incurred
+## Cost explorer
+    1. has easy-to-use interface that lets you visualize, understand, and manage
+    2. use explore costs after they have been incurred
