@@ -319,3 +319,66 @@
     2. use explore costs after they have been incurred
 ## support plans
 ![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/pricemodel.png)
+![image](https://github.com/chialin-liu/AWS_StudyPlan/blob/master/CloudPractitioner/responseTime.png)
+
+# Tag & resource group
+## Tag
+    1. key value pairs attached to AWS
+    2. metadata(data about data)
+    3. tags can be inherited
+## Resource group
+    1. group can share one or more tags
+    2. include name/region/employeed id/department
+## Specific information
+    1. EC2: private/public IP address
+    2. ELB: port configuration
+    3. RDS: db engine
+# AWS org & consolidate billing
+## How bill works
+    1. paying account: it is independent; cannot access resources of other accounts
+    2. easy to track charges and allocate costs
+    3. one bill per AWS
+    4. unused reserved instances in ec2 are applied in group
+##  Org
+    1. multi-factor auth on root account
+    2. 20 linked accounts only
+    
+## CloudTrail
+    1. monitor API calls in platform
+    2. per AWS account and per region
+    3. consolidate logs in s3 :
+        a. turn on cloudtrail in paying account
+        b. create bucket policy allows cross-account access
+        c. turn on other accounts and use bucket in paying account
+    4. when monitoring is enabled on paying account, billing data for all linked accounts is all included    
+    5. aggregated into single s3 bucket belongs to paying account
+# AWS quick start
+    1. use cloudformation 
+# Landing zone
+    1. help customer quickly build a secure/multi-account env
+    
+# AWS calculator(LAB重要）
+## Two types
+    1. simple monthly calculator
+    2. Total cost of ownership calculator: 使用這個寫入resume，說省多少錢 compare the on-premise vs in the cloud
+    
+# Shared responsible (重要要看docment)
+## AWS
+    1. Global infra: region/AZ/edge location
+    2. compute/storage/database/networking
+## Encryption is shared responsible    
+# AWS WAF/Shield
+## What is WAF
+    1. web app firewall
+## What is AWS Shield
+    1. prevents DDoS attack
+# Inspector/Trusted advisor/CloudTrail
+## Inspector
+    1. inspecting EC2 for vulnerable
+## Trusted advisor(GLOBAL)
+    1. core checks and recommendations
+    2. full TA: business & enterprise company
+    3. online-resource to help to reduce cost/increase performance
+## CloudTrail
+    1. increase visibility to user and resource by recording aws console and api calls
+        
