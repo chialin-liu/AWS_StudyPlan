@@ -4,4 +4,5 @@
 4. 可以用cloudfront->cache增加loading webpage速度
 5. 用S3的transfer acceleration提升速度
 6. EC2 可以變成web server -> tomcat??
+7. 用TCO 可以預估節省多少花費
 
