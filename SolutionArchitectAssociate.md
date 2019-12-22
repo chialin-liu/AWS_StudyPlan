@@ -18,4 +18,4 @@
 3. any subnet without assigning specified route table would be assigned to main route table; therefore, keep main route table as private.
 4. if route table wants to connect internet, it needs to connect the target to internet gateway
 5. set subnet association for the public subnet
-<b> 6. security group cannot span VPC </b>
+6. <b>security group cannot span VPC </b>
