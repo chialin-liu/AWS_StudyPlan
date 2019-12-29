@@ -19,3 +19,6 @@
 4. if route table wants to connect internet, it needs to connect the target to internet gateway
 5. set subnet association for the public subnet
 6. <b>security group cannot span VPC </b>
+## 71. VPC endpoints
+1. there are two endpoints, interface endpoints, gateway endpoints
+2. <b>interface endpoints</b> is elastic network interface with private IP
