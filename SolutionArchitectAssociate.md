@@ -19,6 +19,19 @@
 4. if route table wants to connect internet, it needs to connect the target to internet gateway
 5. set subnet association for the public subnet
 6. <b>security group cannot span VPC </b>
+## 65. NAT
+1. NAT gateway is high available and redundancy
+2. <b>NAT instance disable source/destination check</b>
+3. by modifying the route-table for adding destination 0.0.0/0 through NAT instance, then the private subnet instance can reach internet through this route-table and NAT instance
+4. the fallback of NAT instance would be single point failure
+5. NAT instance should behind the security group
+6. NAT gateway inside the AZ
+7. <b>NAT gatway starts 5Gbs and scales to 45Gbs</b>; not associate securty group, no need to patch; auto assign public IP
+8. create a NAT gateway in each AZ
+## 69. Bastions
+1. because NAT gateway doesn't need to be in the security group, and NAT instance needs
+2. SSH or RDP forwards the network to route-table->NACL->Bastion->private subnet instance
+3. Cannot use NAT gateway as Bastion host
 ## 70. Direct Connect
 1. provide the private connectivity between AWS and datacenter
 2. reduce network costs and increase bandwidth
