@@ -69,3 +69,17 @@
 3. MFA delete can provide additional layer of security
 4. Every time we upload the same name file, although we had already set public, this file after uploading still changes to private access.
 5. versioning can make file size extremely large
+## 14. Lifecycle
+1. can be applied to previous or current version
+## 15. cross region replicate(CRR)
+1. require version enabled
+2. this service can enable to change storage class when using CRR
+3. needs to generate a new IAM role
+4. <b> the objects in the original S3 bucket will not be copied to the newly S3 bucket when using CRR</b>
+5. The delete marker will not be copied to the new S3 bucket when using CRR
+6. when delete the current verion in original S3 bucket, this operation will not affect the newly S3 bucket
+## 17 CDN
+1. Origin can be S3/EC2/ELB/Route53
+2. Distrution is a collection of edge locations
+3. Objects are cached for TTL(time to live)
+4. <b> you can clear objects, but will be charged</b>
