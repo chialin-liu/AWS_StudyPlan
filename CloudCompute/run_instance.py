@@ -36,8 +36,9 @@ instances = ec2.run_instances(
      MinCount=1,
      MaxCount=1,
      KeyName='ec2-keypair',
-     # SecurityGroups='yorick_group_v3',
-     SecurityGroupIds='sg-0087d34d0316f2bf4',
+     SecurityGroups=['yorick_group_v3'
+     ]
+     # SecurityGroupIds='sg-0087d34d0316f2bf4',
 
  )
 #
